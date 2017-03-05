@@ -9,7 +9,7 @@ Proberen een ROS-project te maken dat met AruCo en OpenCV werkt.
 ### installing OpenCV 2.4 
 ( https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 )
 ### installing ArUco 
-1. Download
+1. Download (https://sourceforge.net/projects/aruco/files/2.0.19/)
 2. extract
 3. mkdir build
 4. cd build
