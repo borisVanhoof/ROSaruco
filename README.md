@@ -2,7 +2,7 @@
 
 ## Doel
 
-Proberen een ROS-project te maken dat met AruCo en OpenCV werkt.
+Proberen een ROS-project te maken dat met ArUco en OpenCV werkt.
 
 ## SETUP
 
