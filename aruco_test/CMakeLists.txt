@@ -6,7 +6,12 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   roscpp
   std_msgs
+  cv_bridge 
+  image_transport
+  geometry_msgs
 )
+
+FIND_PACKAGE(OpenCV REQUIRED)
 
 generate_messages(
   DEPENDENCIES
@@ -27,5 +32,9 @@ include_directories(
 LIST(APPEND CMAKE_MODULE_PATH /usr/local/lib/cmake)
 
 add_executable(aruco_test src/aruco_test.cpp)
-target_link_libraries(aruco_test ${catkin_LIBRARIES})
+
+target_link_libraries(aruco_test 
+  ${catkin_LIBRARIES} 
+  ${OpenCV_LIBS}
+)
 
