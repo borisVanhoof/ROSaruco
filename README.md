@@ -7,13 +7,13 @@ Proberen een ROS-project te maken dat met ArUco en OpenCV werkt.
 ## comando's
 
 ### ROS 
-in catkin_ws: 'catkin_make --pkg aruco_test'
-in catkin_ws/devel/lib/aruco_test: './aruco_test [yml-file] [marker-size]'
+in catkin_ws: `catkin_make --pkg aruco_test`
+in catkin_ws/devel/lib/aruco_test: `./aruco_test [yml-file] [marker-size]`
 
 ### GIT 
-'git add /ROSaruco'
-'git commit -m "some comments"'
-'git push origin master'
+`git add /ROSaruco`
+`git commit -m "some comments"`
+`git push origin master`
 
 ## ChangeLog
 05/03/17: identificeren id's van de ArUco markers
