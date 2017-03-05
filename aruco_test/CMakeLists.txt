@@ -11,7 +11,14 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
 )
 
+SET(CMAKE_MODULE_PATH ${ARUCO_PATH}/lib/cmake)
+SET(ARUCO_INCLUDE_DIRS ${ARUCO_PATH}/include/aruco)
+
 FIND_PACKAGE(OpenCV REQUIRED)
+FIND_PACKAGE(aruco REQUIRED)
+
+#anders wilt em ni compileren
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -march=core-avx-i -O2") 
 
 generate_messages(
   DEPENDENCIES
@@ -27,6 +34,7 @@ catkin_package(
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
+  ${ARUCO_INCLUDE_DIRS}
 )
 
 LIST(APPEND CMAKE_MODULE_PATH /usr/local/lib/cmake)
@@ -36,5 +44,6 @@ add_executable(aruco_test src/aruco_test.cpp)
 target_link_libraries(aruco_test 
   ${catkin_LIBRARIES} 
   ${OpenCV_LIBS}
+  ${aruco_LIBS}
 )
 
