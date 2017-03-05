@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(aruco_test)
+
+
+find_package(catkin REQUIRED COMPONENTS
+  message_generation
+  roscpp
+  std_msgs
+)
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES aruco_test
+#  CATKIN_DEPENDS message_generation roscpp std_msgs
+#  DEPENDS system_lib
+)
+
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
+
+LIST(APPEND CMAKE_MODULE_PATH /usr/local/lib/cmake)
+
+add_executable(aruco_test src/aruco_test.cpp)
+target_link_libraries(aruco_test ${catkin_LIBRARIES})
+
