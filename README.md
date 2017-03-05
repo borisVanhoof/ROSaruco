@@ -1,6 +1,10 @@
 # ROSaruco
 
-## Links
+## Doel
+
+Proberen een ROS-project te maken dat met AruCo en OpenCV werkt.
+
+## SETUP
 
 ### installing OpenCV 2.4 
 ( https://gist.github.com/arthurbeggs/06df46af94af7f261513934e56103b30 )
