@@ -17,7 +17,7 @@ in catkin_ws/devel/lib/aruco_test: `./aruco_test [yml-file] [marker-size in mete
 
 ## ChangeLog
 05/03/17: identificeren id's van de ArUco markers
-09/03/17: camera gecalibreerd adhv schaakbord
+09/03/17: camera gekalibreerd adhv schaakbord
 
 ## To Do
 juiste vectoren bepalen en assen/ID grafisch weergeven
