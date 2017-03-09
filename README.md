@@ -17,9 +17,10 @@ in catkin_ws/devel/lib/aruco_test: `./aruco_test [yml-file] [marker-size]`
 
 ## ChangeLog
 05/03/17: identificeren id's van de ArUco markers
+09/03/17: camera gecalibreerd adhv schaakbord
 
 ## To Do
-CameraParameters voor extrinsics (YML file voor de raspberry pi camera v2)
+juiste vectoren bepalen en assen/ID grafisch weergeven
 
 ## Handige Links
 
