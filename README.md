@@ -8,7 +8,7 @@ Proberen een ROS-project te maken dat met ArUco en OpenCV werkt.
 
 ### ROS 
 in catkin_ws: `catkin_make --pkg aruco_test`
-in catkin_ws/devel/lib/aruco_test: `./aruco_test [yml-file] [marker-size]`
+in catkin_ws/devel/lib/aruco_test: `./aruco_test [yml-file] [marker-size in meters]`
 
 ### GIT 
 `git add /ROSaruco`
@@ -41,6 +41,10 @@ https://www.howtoforge.com/tutorial/install-git-and-github-on-ubuntu-14.04/#-add
 ### ROS cheat sheet
 
 https://www.clearpathrobotics.com/ros-robot-operating-system-cheat-sheet/
+
+### cameraparameters
+ 
+http://docs.ros.org/jade/api/aruco/html/cameraparameters_8cpp_source.html
 
 ## AruCo
 ArUco README ( http://www.uco.es/investiga/grupos/ava/sites/default/files/GarridoJurado2014.pdf )
